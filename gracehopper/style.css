@@ -1,3 +1,5 @@
+/*Grace hopper*/
+  
 body {
     text-align:center;
     font-family: Open Sans, sans-serif;
@@ -23,20 +25,31 @@ body {
     line-height: 1,5;
   }
   
-  .titulo-verde{
-    color: #04FF9F;
-  }
-  
-  .titulo-rosa{
-    color: #FF9E9E;
+  .titulo-verdeagua{
+    color: #61e8a9;
   }
   
   .titulo-amarelo{
-    color: #FFE36D;
+    color: #e8e14a;
   }
   
+  .titulo-verde{
+    color: #7ae856;
+  }
+  .titulo-vermelho{
+    color: #e8553f;
+  }
+  .titulo-roxo{
+    color: #9c1a89;
+  }
+  .titulo-azul{
+    color: #135c9c;
+  }
+  .titulo-rosa{
+    color: #9E1537;
+  }
   img{
-    width: 100%;
+    width: 50%;
   }
   
   section{
@@ -91,5 +104,36 @@ body {
   .principal a:link {color: white}
   .principal a:hover {color: rgb(56, 2, 107)}
   .principal a:focus {color: #5C0631}
+.menu{
+    list-style:none;
+    border:1px solid #c0c0c0;
+    float:left;
+    }
+  .menu li{
+    position:fixed;
+    float:none;
+    border-right:1px solid #c0c0c0;
+    }
+  .principal li a{color:#333; text-decoration:none; padding:0; display:block;}
 
-  
+  .principal li  ul{
+    position: fixed;
+    top: 30%;
+    left:auto;
+    background-color:#FF6CB5;
+    display: none;
+  }
+    .principal li ul a:hover{
+background:rgb(173, 43, 152);
+color:#fff;
+box-shadow:5px 5px 5px rgb(170, 42, 138) inset;
+
+text-shadow:0px 0px 5px #fff;
+    }
+    
+  .principal li:hover ul, .principal li.over ul{display:block;}
+  .principal li ul li{
+    border:1px solid #FF6CB5;
+    display:block;
+    width:150px;
+    }
